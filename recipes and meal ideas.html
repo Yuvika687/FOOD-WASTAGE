@@ -1,0 +1,433 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes and Meal Ideas</title>
+    <style>
+        body {
+            font-family: 'serif';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?w=996&t=st=1699710556~exp=1699711156~hmac=a6eacb1f83b2d1acc802d7b4bd295cec475c4f9502b23b3064490001e9db9c49);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        #navbar {
+            display: flex;
+            padding: 10px;
+        }
+
+        #navbar a {
+            text-decoration: none;
+            color: white;
+            margin: 0 15px;
+        }
+
+        
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .box {
+            width: 30%;
+            height: 600px; /* Set a fixed height for all boxes */
+            margin: 20px;
+            padding: 20px;
+            background-color: #fbf8f8;
+            border: 1px solid #4a4848;
+            border-radius: 8px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .box p {
+            max-height: 200px; 
+            overflow-y: auto; 
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .view-more {
+            cursor: pointer;
+            color: #007BFF;
+            align-self: flex-end;
+            margin-top: auto;
+            border:3px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .view-more:hover{
+            text-decoration: underline;
+            border: 4px solid black;
+            border-radius:5px;
+            
+        }
+        .hidden {
+            display: none;
+        }
+        #logo1{
+            position: absolute;
+            left:10px
+            
+        }
+        .logos{
+            color: #fbf8f8;
+            text-align: center;
+        }
+        .boxi{
+            border:4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <ul>
+           <a href="index.html">Home</a>
+           <a href="about.html">About</a>
+           <a href="recipes and meal ideas.html">Recipes</a>
+           <a href="tips.html">Tips</a>
+           <a href="contact_us.html">Contact us</a>
+        </ul>
+  </div> 
+    <header class="logos">
+        <h1 id="logo1"></h1>
+        <h1><u id="logo2"></u>Recipes and Meal Ideas</h1>
+    </header>
+    <div class="container">
+        <div class="box" id="vegetable stir fry">
+            <h2>Vegetable Stir Fry:</h2>
+            <img src="https://img.freepik.com/free-photo/fried-vegetables-with-sauce-pan_1220-5230.jpg?w=996&t=st=1699646800~exp=1699647400~hmac=b5faee05daad8b2d1d24a347fe8a563f3d47b69b2b72d27d529b5e00d6e58bf0">
+            
+            <p>Ingredients:<br>
+                <ul>
+                    <li>Assorted vegetables (carrots, bell peppers, broccoli, etc.)</li>
+                    <li>Soy sauce</li>
+                    <li>Garlic</li>
+                    <li>Ginger</li>
+                    <li>Sesame oil</li>
+                    <li>Optional: Tofu or chicken for added protein</li>
+                </ul></p>
+            <p class="hidden">Instructions:<br>
+                Chop the vegetables into bite-sized pieces.Heat same oil in a pan and sauté garlic and ginger.Add the chopped vegetables and stir-fry until they are cooked but still crisp.Add soy sauce for flavor.Optional: Add tofu or cooked chicken for extra protein.Serve over rice or noodles. Enjoy!</p>
+            <span class="view-more" onclick="toggleVisibility('vegetable stir fry')">View More</span>
+        </div>
+        <div class="box" id="leftover pasta salad">
+            <h2>Leftover Pasta Salad:</h2>
+            <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?w=996&t=st=1699647027~exp=1699647627~hmac=29c40a508588bf5b2dba8d82dd0a9bdc1335af70b5341152bc4e1aa529eeb1c2">
+            <p>Ingredients:<br>
+                <ul>
+                    <li>Leftover cooked pasta</li>
+                    <li>Cherry tomatoes</li>
+                    <li>Olives</li>
+                    <li>Feta cheese</li>
+                    <li>Italian dressing</li>
+                    <li>Fresh basil</li>
+                </ul></p>
+            <p class="hidden">Instructions:<br>
+                Combine leftover pasta with halved cherry tomatoes, sliced olives, and crumbled feta cheese.Toss the ingredients together.Drizzle Italian dressing over the salad and toss again to coat evenly.Garnish with fresh basil.Chill in the refrigerator before serving. Enjoy!</p>
+            <span class="view-more" onclick="toggleVisibility('leftover pasta salad')">View More</span>
+        </div>
+        
+        <div class="box" id="vegetable broth from scraps">
+            <h2>Vegetable Broth from Scraps:</h2>
+            <img src="https://img.freepik.com/free-photo/carrot-soup-with-cream-parsley-wooden-table_123827-22531.jpg?w=996&t=st=1699648325~exp=1699648925~hmac=30f834fa9d6f0d30293b43963e74995b3c9ea2fc8052c2bf917f6cdd4ab206d6">
+            <p>Ingredients:<br>
+                <ul>
+                <li>Vegetable scraps (carrot ends, celery tops, onion peels, etc.)</li>
+                <li>Water</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Herbs (parsley, thyme, bay leaves)</li>
+            </ul></p>
+            <p class="hidden">Instructions:<br>
+                Collect vegetable scraps in a container and store them in the freezer until you have enough.In a large pot, add the vegetable scraps and cover them with water.Bring the water to a boil, then reduce the heat to a simmer.Add salt, pepper, and herbs to taste.Simmer for1-2 hours, allowing the flavors to meld.Strain the broth to remove the vegetable scraps, and use the broth as a base for soups, stews, and other dishes.</p>
+            <span class="view-more" onclick="toggleVisibility('vegetable broth from scraps')">View More</span>
+        </div>
+        <div class="box" id="citrus peel marmalade">
+            <h2>Citrus Peel Marmalade:</h2>
+            <img src="https://img.freepik.com/free-photo/homemade-tangerine-fruit-butter-high-view_23-2148525159.jpg?w=996&t=st=1699679017~exp=1699679617~hmac=b5fd5d9a599db4507edb29503feccdeb1ba920685397af0aa7caee658d6dc28c">
+            <p>Ingredients:<br>
+                <ul>
+                    <li>Citrus peels (orange, lemon, or a mix)</li>
+                    <li>Sugar</li>
+                    <li>Water</li>
+                    
+                </ul></p>
+            <p class="hidden">Instructions:<br>
+                Collect citrus peels from oranges, lemons, or a mix of both.Slice the peels into thin strips.In a pot, combine the citrus peels with an equal amount of sugar.Add enough water to cover the peels and sugar.Bring the mixture to a boil, then reduce the heat and simmer until the peels are soft and the mixture has thickened.Allow the marmalade to cool and transfer it to a jar. Refrigerate and use it as a spread on toast or as a topping.</p>
+            <span class="view-more" onclick="toggleVisibility('citrus peel marmalade')">View More</span>
+        </div>
+        <div class="box" id="parmesan zucchini chips">
+            <h2>Parmesan Zucchini Chips:</h2>
+            <img src="https://img.freepik.com/free-photo/close-up-food-snacks-made-from-zucchini_23-2149134034.jpg?w=996&t=st=1699679178~exp=1699679778~hmac=b3b1ab8581ef74bf451aaa51e8884cc113e9085385f2169b409daa61ee1df817">
+            <p>Ingredients:<br>
+              <ul>
+                <li>2 medium-sized zucchinis</li>
+                <li>1/2 cup grated Parmesan cheese</li>
+                <li>1 tablespoon olive oil</li>
+                <li>1/2 teaspoon garlic powder</li>
+                <li>Salt and pepper to taste</li>
+               </ul></p>
+            <p class="hidden">Instructions:<br>
+                Preheat the oven to 425°F (220°C). Line a baking sheet with parchment paper.Slice the zucchinis into thin rounds.In a bowl, toss the zucchini slices with olive oil, garlic powder, salt, and pepper until well coated.Arrange the zucchini slices in a single layer on the prepared baking sheet.Sprinkle grated Parmesan cheese over each zucchini slice.Bake for 12-15 minutes or until the edges are golden and the cheese is melted and slightly crispy.Remove from the oven and let the zucchini chips cool for a few minutes before serving.</p>
+            <span class="view-more" onclick="toggleVisibility('parmesan zucchini chips')">View More</span>
+        </div>
+        <div class="box" id="potato peel chips">
+            <h2>Potato Peel Chips:</h2>
+            <img src="https://img.freepik.com/free-photo/fried-potato-wedges_2829-16453.jpg?w=996&t=st=1699647846~exp=1699648446~hmac=6ba07e4e30f8aa07b3210836c60af758e9dab22ddee40d92e01dcc8cbdaffb79">
+            <p>Ingredients:<br>
+               <ul>
+                <li>Potato peels (from 4-6 potatoes)</li>
+                <li>Olive oil</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Paprika (optional)</li>
+            </ul></p>
+            <p class="hidden">Instructions:<br>
+                Preheat the oven to 400°F (200°C).Thoroughly wash and dry the potato peels.Toss the peels with olive oil, salt, pepper, and paprika (if using).Spread the peels in a single layer on a baking sheet.Bake for 15-20 minutes or until the peels are crispy and golden brown.Remove from the oven and let them cool. Enjoy as a crispy snack or a side dish!</p>
+            <span class="view-more" onclick="toggleVisibility('potato peel chips')">View More</span>
+        </div>
+       </div>
+       <script>
+
+    function toggleVisibility(sectionId) {
+        const box = document.getElementById(sectionId);
+        const moreText = box.querySelector('.hidden');
+        const viewMoreButton = box.querySelector('.view-more');
+
+        if (moreText.style.display === 'none') {
+            moreText.style.display = 'block';
+            viewMoreButton.innerHTML = 'View Less';
+            box.style.height = 'auto'; 
+        } else {
+            moreText.style.display = 'none';
+            viewMoreButton.innerHTML = 'View More';
+            box.style.height = '600px'; 
+        }
+    }
+
+
+    </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes and Meal Ideas</title>
+    <style>
+        body {
+            font-family: 'serif';
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(https://img.freepik.com/free-photo/top-view-table-full-delicious-food-composition_23-2149141352.jpg?w=996&t=st=1699710556~exp=1699711156~hmac=a6eacb1f83b2d1acc802d7b4bd295cec475c4f9502b23b3064490001e9db9c49);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .box {
+            width: 30%;
+            height: 600px; /* Set a fixed height for all boxes */
+            margin: 20px;
+            padding: 20px;
+            background-color: #fbf8f8;
+            border: 1px solid #4a4848;
+            border-radius: 8px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+        .box p {
+            max-height: 200px; 
+            overflow-y: auto; 
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .view-more {
+            cursor: pointer;
+            color: #007BFF;
+            align-self: flex-end;
+            margin-top: auto;
+            border:3px solid black;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        .view-more:hover{
+            text-decoration: underline;
+            border: 4px solid black;
+            border-radius:5px;
+            
+        }
+        .hidden {
+            display: none;
+        }
+        #logo1{
+            position: absolute;
+            left:10px
+            
+        }
+        .logos{
+            color: #fbf8f8;
+            text-align: center;
+        }
+        .boxi{
+            border:4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header class="logos">
+        <h1 id="logo1"></h1>
+        <h1><u id="logo2"></u>Recipes and Meal Ideas</h1>
+    </header>
+    <div class="container">
+        <div class="box" id="vegetable stir fry">
+            <h2>Vegetable Stir Fry:</h2>
+            <img src="https://img.freepik.com/free-photo/fried-vegetables-with-sauce-pan_1220-5230.jpg?w=996&t=st=1699646800~exp=1699647400~hmac=b5faee05daad8b2d1d24a347fe8a563f3d47b69b2b72d27d529b5e00d6e58bf0">
+            
+            <p>Ingredients:<br>
+                <ul>
+                    <li>Assorted vegetables (carrots, bell peppers, broccoli, etc.)</li>
+                    <li>Soy sauce</li>
+                    <li>Garlic</li>
+                    <li>Ginger</li>
+                    <li>Sesame oil</li>
+                    <li>Optional: Tofu or chicken for added protein</li>
+                </ul></p>
+            <p class="hidden">Instructions:<br>
+                Chop the vegetables into bite-sized pieces.Heat same oil in a pan and sauté garlic and ginger.Add the chopped vegetables and stir-fry until they are cooked but still crisp.Add soy sauce for flavor.Optional: Add tofu or cooked chicken for extra protein.Serve over rice or noodles. Enjoy!</p>
+            <span class="view-more" onclick="toggleVisibility('vegetable stir fry')">View More</span>
+        </div>
+        <div class="box" id="leftover pasta salad">
+            <h2>Leftover Pasta Salad:</h2>
+            <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?w=996&t=st=1699647027~exp=1699647627~hmac=29c40a508588bf5b2dba8d82dd0a9bdc1335af70b5341152bc4e1aa529eeb1c2">
+            <p>Ingredients:<br>
+                <ul>
+                    <li>Leftover cooked pasta</li>
+                    <li>Cherry tomatoes</li>
+                    <li>Olives</li>
+                    <li>Feta cheese</li>
+                    <li>Italian dressing</li>
+                    <li>Fresh basil</li>
+                </ul></p>
+            <p class="hidden">Instructions:<br>
+                Combine leftover pasta with halved cherry tomatoes, sliced olives, and crumbled feta cheese.Toss the ingredients together.Drizzle Italian dressing over the salad and toss again to coat evenly.Garnish with fresh basil.Chill in the refrigerator before serving. Enjoy!</p>
+            <span class="view-more" onclick="toggleVisibility('leftover pasta salad')">View More</span>
+        </div>
+        
+        <div class="box" id="vegetable broth from scraps">
+            <h2>Vegetable Broth from Scraps:</h2>
+            <img src="https://img.freepik.com/free-photo/carrot-soup-with-cream-parsley-wooden-table_123827-22531.jpg?w=996&t=st=1699648325~exp=1699648925~hmac=30f834fa9d6f0d30293b43963e74995b3c9ea2fc8052c2bf917f6cdd4ab206d6">
+            <p>Ingredients:<br>
+                <ul>
+                <li>Vegetable scraps (carrot ends, celery tops, onion peels, etc.)</li>
+                <li>Water</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Herbs (parsley, thyme, bay leaves)</li>
+            </ul></p>
+            <p class="hidden">Instructions:<br>
+                Collect vegetable scraps in a container and store them in the freezer until you have enough.In a large pot, add the vegetable scraps and cover them with water.Bring the water to a boil, then reduce the heat to a simmer.Add salt, pepper, and herbs to taste.Simmer for1-2 hours, allowing the flavors to meld.Strain the broth to remove the vegetable scraps, and use the broth as a base for soups, stews, and other dishes.</p>
+            <span class="view-more" onclick="toggleVisibility('vegetable broth from scraps')">View More</span>
+        </div>
+        <div class="box" id="citrus peel marmalade">
+            <h2>Citrus Peel Marmalade:</h2>
+            <img src="https://img.freepik.com/free-photo/homemade-tangerine-fruit-butter-high-view_23-2148525159.jpg?w=996&t=st=1699679017~exp=1699679617~hmac=b5fd5d9a599db4507edb29503feccdeb1ba920685397af0aa7caee658d6dc28c">
+            <p>Ingredients:<br>
+                <ul>
+                    <li>Citrus peels (orange, lemon, or a mix)</li>
+                    <li>Sugar</li>
+                    <li>Water</li>
+                    
+                </ul></p>
+            <p class="hidden">Instructions:<br>
+                Collect citrus peels from oranges, lemons, or a mix of both.Slice the peels into thin strips.In a pot, combine the citrus peels with an equal amount of sugar.Add enough water to cover the peels and sugar.Bring the mixture to a boil, then reduce the heat and simmer until the peels are soft and the mixture has thickened.Allow the marmalade to cool and transfer it to a jar. Refrigerate and use it as a spread on toast or as a topping.</p>
+            <span class="view-more" onclick="toggleVisibility('citrus peel marmalade')">View More</span>
+        </div>
+        <div class="box" id="parmesan zucchini chips">
+            <h2>Parmesan Zucchini Chips:</h2>
+            <img src="https://img.freepik.com/free-photo/close-up-food-snacks-made-from-zucchini_23-2149134034.jpg?w=996&t=st=1699679178~exp=1699679778~hmac=b3b1ab8581ef74bf451aaa51e8884cc113e9085385f2169b409daa61ee1df817">
+            <p>Ingredients:<br>
+              <ul>
+                <li>2 medium-sized zucchinis</li>
+                <li>1/2 cup grated Parmesan cheese</li>
+                <li>1 tablespoon olive oil</li>
+                <li>1/2 teaspoon garlic powder</li>
+                <li>Salt and pepper to taste</li>
+               </ul></p>
+            <p class="hidden">Instructions:<br>
+                Preheat the oven to 425°F (220°C). Line a baking sheet with parchment paper.Slice the zucchinis into thin rounds.In a bowl, toss the zucchini slices with olive oil, garlic powder, salt, and pepper until well coated.Arrange the zucchini slices in a single layer on the prepared baking sheet.Sprinkle grated Parmesan cheese over each zucchini slice.Bake for 12-15 minutes or until the edges are golden and the cheese is melted and slightly crispy.Remove from the oven and let the zucchini chips cool for a few minutes before serving.</p>
+            <span class="view-more" onclick="toggleVisibility('parmesan zucchini chips')">View More</span>
+        </div>
+        <div class="box" id="potato peel chips">
+            <h2>Potato Peel Chips:</h2>
+            <img src="https://img.freepik.com/free-photo/fried-potato-wedges_2829-16453.jpg?w=996&t=st=1699647846~exp=1699648446~hmac=6ba07e4e30f8aa07b3210836c60af758e9dab22ddee40d92e01dcc8cbdaffb79">
+            <p>Ingredients:<br>
+               <ul>
+                <li>Potato peels (from 4-6 potatoes)</li>
+                <li>Olive oil</li>
+                <li>Salt</li>
+                <li>Pepper</li>
+                <li>Paprika (optional)</li>
+            </ul></p>
+            <p class="hidden">Instructions:<br>
+                Preheat the oven to 400°F (200°C).Thoroughly wash and dry the potato peels.Toss the peels with olive oil, salt, pepper, and paprika (if using).Spread the peels in a single layer on a baking sheet.Bake for 15-20 minutes or until the peels are crispy and golden brown.Remove from the oven and let them cool. Enjoy as a crispy snack or a side dish!</p>
+            <span class="view-more" onclick="toggleVisibility('potato peel chips')">View More</span>
+        </div>
+       </div>
+       <script>
+
+    function toggleVisibility(sectionId) {
+        const box = document.getElementById(sectionId);
+        const moreText = box.querySelector('.hidden');
+        const viewMoreButton = box.querySelector('.view-more');
+
+        if (moreText.style.display === 'none') {
+            moreText.style.display = 'block';
+            viewMoreButton.innerHTML = 'View Less';
+            box.style.height = 'auto'; 
+        } else {
+            moreText.style.display = 'none';
+            viewMoreButton.innerHTML = 'View More';
+            box.style.height = '600px'; 
+        }
+    }
+
+
+    </script>
+</body>
+>>>>>>> 80aff5c056d7e46f4760c0be90c7bd9b1fc69ade
+</html>
